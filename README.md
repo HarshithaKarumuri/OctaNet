@@ -3,9 +3,9 @@
 
 **Features:**
 
-    **1. Clean and Minimal UI:**
+    1. Clean and Minimal UI:
          Designed for simplicity with an emphasis on user experience.     
-    **2. Cross-Browser Compatability:**
+    2. Cross-Browser Compatability:
          Works well across all major browsers(Chrome, Edge, Firefox, etc.).
 
 **Technologies Used:**
