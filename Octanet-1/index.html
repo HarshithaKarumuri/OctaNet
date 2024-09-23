@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Pre-Order Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Apple</div>
+        <ul class="nav-links">
+            <li><a href="#about-product">About</a></li>
+            <li><a href="#pre-order">Pre-Order</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="header-container">
+            <h1>New Product Launch: Pre-Order Now!</h1>
+            <p>Get exclusive early access to our upcoming revolutionary product.</p>
+            <a href="#pre-order" class="cta-button">Pre-Order Now</a>
+        </div>
+    </header>
+
+    <section id="about-product" class="about-section">
+        <h2>Introducing the Future of Innovation</h2>
+        <p>Our new product redefines what's possible. Experience cutting-edge technology, stunning design, and unmatched performance.</p>
+        <div class="product-details">
+            <div class="product-feature">
+                <img src="C:\Users\HP\Downloads\iphone.avif" alt="Product Image">
+            </div>
+            <div class="product-feature">
+                <h3>Key Features</h3>
+                <ul>
+                    <li> Advanced technology</li>
+                    <li>  Sleek, modern design</li>
+                    <li> High durability</li>
+                    <li> Unbeatable performance</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="pre-order" class="pre-order-section">
+        <h2>Pre-Order Your Product</h2>
+        <form class="pre-order-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <button type="submit" class="submit-button">Submit Pre-Order</button>
+        </form>
+        <div id="success-message" class="success-message" style="display: none;"></div>
+    </section>
+    
+    <script>
+        document.getElementById("preOrderForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+    
+            // Show success message
+            document.getElementById("success-message").innerText = "Successfully pre-ordered your product!";
+            document.getElementById("success-message").style.display = "block";
+    
+            // Optionally, reset the form
+            this.reset();
+        });
+    </script>
+    
+    <section id="testimonials" class="testimonials-section">
+        <h2>What People Are Saying</h2>
+        <div class="testimonial">
+            <p>"This product is a game-changer. I can't wait to get my hands on it!"</p>
+            <p>- John Doe</p>
+        </div>
+        <div class="testimonial">
+            <p>"I'm blown away by the innovation and design. Truly a masterpiece!"</p>
+            <p>- Jane Smith</p>
+        </div>
+    </section>
+    
+    <center>
+    <footer id="contact">
+        <div class="contact-container">
+            <div class="contact-details">
+                <h2>Contact Us</h2>
+                <p>Have a question or need assistance? Feel free to reach out.</p>
+                <ul>
+                    <li><strong>Address:</strong> Main Street, vij, AP, 500001</li>
+                    <li><strong>Phone:</strong> 909090909</li>
+                    <li><strong>Email:</strong> info@asus.com</li>
+                    <li><strong>Website:</strong> www.asus.com</li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <center>
+                <h2>Follow Us</h2>
+                <br>
+                <ul>
+                    <li><a href=https://www.facebook.com/ASUS/><img src= "C:\Users\HP\Downloads\facebook3.png"alt="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=https://twitter.com/asusindia><img src= "C:\Users\HP\Downloads\Twitter2.png"alt="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=https://www.instagram.com/asus/?hl=en><img src= "C:\Users\HP\Downloads\Instagram.jpg"alt="Instagram"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                </center>
+            </div>
+        </div>
+    </footer>
+    </center>
+</body>
+</html>
